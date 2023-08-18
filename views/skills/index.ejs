@@ -8,11 +8,11 @@
 </head>
 <body>
     <a href="/">Home</a>
-    <h1>All To-dos</h1>
+    <h1>All Skills</h1>
     <ul>
-      <% todos.forEach(function(s) { %>
+      <% skills.forEach(function(skill) { %>
         <li>
-          <a href="/skills/<%= s.id %>"><%= s.skill %></a>
+          <a href="/skills/<%= skill.id %>"><%= skill.skill %></a>
         </li>
       <% }); %>
     </ul>
